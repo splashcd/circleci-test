@@ -18,3 +18,4 @@ class SomeClass:
         else:
             payload = {"key": "default"}
         self._print_json(payload)
+        return None
