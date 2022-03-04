@@ -24,4 +24,4 @@ class ProdConfig(AppConfig):
     DB = "Prod"
 
     def __init__(self):
-        print(f"In ProdConfig")
+        print("In ProdConfig")
