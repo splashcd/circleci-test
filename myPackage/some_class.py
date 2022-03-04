@@ -13,8 +13,9 @@ class SomeClass:
     def eval_arg(self, arg1: str) -> None:
         if isinstance(arg1, str):
             payload = {"key": arg1}
-        elif isinstance(arg1, dict) and arg1["key"]:
+        elif isinstance(arg1, dict) and\
+            arg1[ "key"]:
             payload = arg1
         else:
-            payload = {"key": "default"}
-        self._print_json(payload)
+            payload = {"key": "default"  }
+        self._print_json( payload )
