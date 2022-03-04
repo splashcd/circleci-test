@@ -1,5 +1,6 @@
-import logging
 import json
+import logging
+from typing import Optional, Union
 
 
 class SomeClass:
@@ -10,7 +11,7 @@ class SomeClass:
         self._logger.info(f"{json.dumps(arg1)}")
         return None
 
-    def eval_arg(self, arg1: str) -> None:
+    def eval_arg(self, arg1: Optional[Union[dict, str]] = None) -> None:
         if isinstance(arg1, str):
             payload = {"key": arg1}
         elif isinstance(arg1, dict) and arg1["key"]:
