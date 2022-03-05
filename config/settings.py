@@ -1,6 +1,6 @@
 class AppConfig:
     DB: str
-    logging = "Test"
+    logging = "test"
 
     def __init__(self):
         print("In AppConfig")
@@ -21,7 +21,7 @@ class StagingConfig(AppConfig):
 
 
 class ProdConfig(AppConfig):
-    DB = "Prod"
+    DB = "prod"
 
     def __init__(self):
         print("In ProdConfig")
