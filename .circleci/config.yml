@@ -33,8 +33,7 @@ workflows:
       - pre_commit:
           filters:
             branches:
-              only:
-                - develop
               ignore:
+                - develop
                 - main
                 - /hotfix-.*/
