@@ -19,6 +19,11 @@ class SomeClassTest(unittest.TestCase):
         retVal = self._sc.eval_arg()
         self.assertIsNone(retVal)
 
+    def test_echo_me(self):
+        word = "Hello"
+        retVal = self._sc.echo_me(word)
+        self.assertEqual(retVal, f"{word} {word}")
+
 
 if __name__ == "__main__":
     unittest.main()

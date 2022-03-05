@@ -20,3 +20,6 @@ class SomeClass:
             payload = {"key": "default"}
         self._print_json(payload)
         return None
+
+    def echo_me(self, arg1: str) -> str:
+        return f"{arg1} {arg1}"
