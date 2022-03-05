@@ -4,4 +4,4 @@ requirements:
 	pre-commit install
 	
 test:
-	pytest tests/test_some_class.py -s
+	pytest tests -s
