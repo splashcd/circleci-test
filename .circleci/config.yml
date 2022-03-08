@@ -18,6 +18,7 @@ jobs:
       - restore_cache:
           keys:
             - deps-{{ checksum ".pre-commit-config.yaml" }}
+            - deps- # used if checksum fails
       - run:
           name: Pre-Commit
           command: |
